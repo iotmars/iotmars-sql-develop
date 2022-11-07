@@ -1,0 +1,6 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://ecs02:8761/eureka
+  instance:
+    prefer-ip-address: true

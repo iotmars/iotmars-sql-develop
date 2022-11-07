@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: sql-develop-demo
+  cloud:
+    config:
+      label: master
+      name: ${spring.application.name}
+      discovery:
+        enabled: true
+        service-id: config-server
