@@ -190,9 +190,68 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Getting started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         Getting started
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sql" class="md-nav__link">
+    纯SQL实现功能开发
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mybatis" class="md-nav__link">
+    mybatis支持
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#springboot" class="md-nav__link">
+    springboot支持
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sql_1" class="md-nav__link">
+    sql自动生成
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sql_2" class="md-nav__link">
+    sql按照顺序执行
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -207,7 +266,7 @@
   
     <li class="md-nav__item">
       <a href="install/" class="md-nav__link">
-        Installation
+        Install
       </a>
     </li>
   
@@ -248,6 +307,49 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sql" class="md-nav__link">
+    纯SQL实现功能开发
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mybatis" class="md-nav__link">
+    mybatis支持
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#springboot" class="md-nav__link">
+    springboot支持
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sql_1" class="md-nav__link">
+    sql自动生成
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sql_2" class="md-nav__link">
+    sql按照顺序执行
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -262,7 +364,19 @@
 
 
 <h1 id="getting-started">Getting started</h1>
-<p>This is the document for sql-develop-doc repo. </p>
+<p>一个用sql语句实现敏捷开发的组件，项目地址为:https://github.com/iotmars/sql-devlop.git</p>
+<p>该项目具有如下特性:</p>
+<h4 id="sql">纯SQL实现功能开发</h4>
+<p>传统ssm项目有繁琐又模板式的跳转（controller-&gt;service-mapper）,本项目的原意是让您省略这些模板式的跳转，直接写sql实现功能的开发。一些简单的查询sql可以由系统自动生成然后拼接。这样连sql语句这一步都省略了。希望本项目可以让拧螺丝的您感到快乐和轻松。</p>
+<h4 id="mybatis">mybatis支持</h4>
+<p>引入了mybatis框架，可以按照mybaitis的方式书写sql，使用如<foreach/>、<if/>等标签，对于程序员来说，学习成本比较低。</p>
+<h4 id="springboot">springboot支持</h4>
+<p>本项目是面向springboot框架开发的，可以方便的将该模块引入您的已有的springboot或者springcloud项目。</p>
+<h4 id="sql_1">sql自动生成</h4>
+<p>本项目使用jsqlparser来自动生成sql。单表和多表的查询可以自动生成sql。您只需要传入指定的参数，就能自动生成sql，并生成相应的结果。</p>
+<p>jsqlparser是github上的一个开源项目，地址为：https://github.com/JSQLParser/JSqlParser。</p>
+<h4 id="sql_2">sql按照顺序执行</h4>
+<p>本项目可以实现一批sql按照先后顺序执行，后执行的sql可以使用先执行的sql的结果，这是一个按照先后顺序执行的流水线。</p>
 
 
 
@@ -284,13 +398,13 @@
       
       
         
-        <a href="install/" class="md-footer__link md-footer__link--next" aria-label="Next: Installation" rel="next">
+        <a href="install/" class="md-footer__link md-footer__link--next" aria-label="Next: Install" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Installation
+              Install
             </div>
           </div>
           <div class="md-footer__button md-icon">
