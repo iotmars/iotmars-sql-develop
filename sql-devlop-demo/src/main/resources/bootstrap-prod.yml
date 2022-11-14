@@ -1,6 +1,0 @@
-eureka:
-  client:
-    service-url:
-      defaultZone: http://eureka.mars:8761/eureka
-  instance:
-    prefer-ip-address: true
